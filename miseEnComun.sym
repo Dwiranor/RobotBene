@@ -1,0 +1,984 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__signed_stack_001colorsensor	6	1	0	4	8
+1	__signed_stack_002colorsensor	6	1	4	4	4
+2	__signed_stack_001main	6	1	8	4	6
+3	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	12	4	92
+4	__D0main	6	1	16	4	144
+5	__D0colorsensor	6	1	20	4	17
+6	color	4	1	24	2	7
+7	__zfmain	1	1	26	1	7
+8	__constVal96	2	0	27	1	68
+9	__constVal63	2	0	28	1	68
+10	__colorsensor_return	1	1	29	1	3
+11	__SetSensorColorFull_7qG2_port_7qG2_000_inline_colorsensor	1	1	30	1	4
+12	____initialize_global_data_return	1	1	31	1	3
+13	__constVal3	2	0	32	1	68
+14	__ResetSensorPort	1	1	33	1	3
+15	__constVal0	2	1	34	1	228
+16	__constVal32	2	0	35	1	204
+17	__constVal1	2	0	36	1	1
+18	__ResetSensorTmp	1	1	37	1	2
+19	__constVal13	2	0	38	1	1
+20	__PFTmp	1	1	39	1	1
+21	__zfcolorsensor	1	1	40	1	15
+22	____ResetSensorSubroutine_return	1	1	41	1	3
+23	__constVal2	2	0	42	1	23
+24	__colorsensor_7qG2_csr_7qG2_001	8	0	7	20	5
+25	__colorsensor_7qG2_csr_7qG2_001.Result	2	1	44	1	5
+26	__colorsensor_7qG2_csr_7qG2_001.Port	1	1	45	1	5
+27	__colorsensor_7qG2_csr_7qG2_001.ColorValue	4	1	46	2	5
+28	__colorsensor_7qG2_csr_7qG2_001.RawArray	7	0	48	4	5
+29	__colorsensor_7qG2_csr_7qG2_001.RawArray.RawArray_type	3	0	0	2	0
+30	__colorsensor_7qG2_csr_7qG2_001.NormalizedArray	7	0	50	4	5
+31	__colorsensor_7qG2_csr_7qG2_001.NormalizedArray.NormalizedArray_type	3	0	0	2	0
+32	__colorsensor_7qG2_csr_7qG2_001.ScaledArray	7	0	52	4	5
+33	__colorsensor_7qG2_csr_7qG2_001.ScaledArray.ScaledArray_type	4	0	0	2	0
+34	__colorsensor_7qG2_csr_7qG2_001.Invalid	1	1	54	1	5
+35	__OUT_AC	7	0	56	4	22
+36	__OUT_AC.__OUT_AC_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	17	0	#line 17 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	18	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	17	2	#line 17 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	18	2	#line 18 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	19	2		subcall colorsensor, __colorsensor_return
+0	18	4	#line 18 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	18	4	#line 18 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	19	4		mov __signed_stack_001main, color
+0	18	6	#line 18 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	18	6	#line 18 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	19	6		set __D0main, 3
+0	18	9	#line 18 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	19	9		cmp 4, __zfmain, __signed_stack_001main, __D0main
+0	18	13	#line 18 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	20	13	#line 20 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	22	13	#line 22 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	22	13	#line 22 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	23	13		mov __signed_stack_001main, color
+0	22	15	#line 22 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	22	15	#line 22 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	23	15		set __D0main, 5
+0	22	18	#line 22 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	23	18		cmp 4, __zfmain, __signed_stack_001main, __D0main
+0	22	22	#line 22 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	23	22		mov __D0main, __zfmain
+0	24	24	#line 24 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	25	24		brtst 4, __NXC_Label_507, __zfmain
+0	24	27	#line 24 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	25	27		set __D0main, 70
+0	25	30	#line 25 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	26	30	#pragma macro 7
+0	26	30		setout __OUT_AC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3769	53	#line 3769 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	25	53	#line 25 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	25	53	#line 25 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	26	53		set __Wait_7qG2_ms_7qG2_000_inline_main, 850
+0	25	56	#line 25 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	56	#line 7921 "NXCDefs.h"
+0	7922	56		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	59	#line 7921 "NXCDefs.h"
+0	27	59	#line 27 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	27	59	#line 27 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	28	59		set __D0main, 75
+0	28	62	#line 28 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	29	62	#pragma macro 7
+0	29	62		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3790	85	#line 3790 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	28	85	#line 28 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	28	85	#line 28 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	29	85		set __D0main, 20
+0	29	88	#line 29 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	30	88	#pragma macro 7
+0	30	88		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3797	111	#line 3797 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	29	111	#line 29 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	29	111	#line 29 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	30	111		set __Wait_7qG2_ms_7qG2_000_inline_main, 1350
+0	29	114	#line 29 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	114	#line 7921 "NXCDefs.h"
+0	7922	114		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	117	#line 7921 "NXCDefs.h"
+0	31	117	#line 31 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	31	117	#line 31 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	32	117		set __D0main, 70
+0	32	120	#line 32 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	33	120	#pragma macro 7
+0	33	120		setout __OUT_AC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3814	143	#line 3814 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	32	143	#line 32 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	32	143	#line 32 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	33	143		set __Wait_7qG2_ms_7qG2_000_inline_main, 1700
+0	32	146	#line 32 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	146	#line 7921 "NXCDefs.h"
+0	7922	146		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	149	#line 7921 "NXCDefs.h"
+0	34	149	#line 34 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	34	149	#line 34 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	35	149		set __D0main, 20
+0	35	152	#line 35 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	36	152	#pragma macro 7
+0	36	152		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3831	175	#line 3831 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	35	175	#line 35 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	35	175	#line 35 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	36	175		set __D0main, 65
+0	36	178	#line 36 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	37	178	#pragma macro 7
+0	37	178		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3838	201	#line 3838 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	36	201	#line 36 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	36	201	#line 36 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	37	201		set __Wait_7qG2_ms_7qG2_000_inline_main, 1300
+0	36	204	#line 36 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	204	#line 7921 "NXCDefs.h"
+0	7922	204		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	207	#line 7921 "NXCDefs.h"
+0	38	207	#line 38 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	38	207	#line 38 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	39	207		set __D0main, 70
+0	39	210	#line 39 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	40	210	#pragma macro 7
+0	40	210		setout __OUT_AC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3855	233	#line 3855 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	39	233	#line 39 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	39	233	#line 39 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	40	233		set __Wait_7qG2_ms_7qG2_000_inline_main, 1700
+0	39	236	#line 39 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	236	#line 7921 "NXCDefs.h"
+0	7922	236		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	239	#line 7921 "NXCDefs.h"
+0	41	239	#line 41 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	41	239	#line 41 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	42	239		set __D0main, 20
+0	42	242	#line 42 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	43	242	#pragma macro 7
+0	43	242		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3872	265	#line 3872 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	42	265	#line 42 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	42	265	#line 42 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	43	265		set __D0main, 65
+0	43	268	#line 43 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	44	268	#pragma macro 7
+0	44	268		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3879	291	#line 3879 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	43	291	#line 43 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	43	291	#line 43 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	44	291		set __Wait_7qG2_ms_7qG2_000_inline_main, 1300
+0	43	294	#line 43 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	294	#line 7921 "NXCDefs.h"
+0	7922	294		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	297	#line 7921 "NXCDefs.h"
+0	45	297	#line 45 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	45	297	#line 45 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	46	297		set __D0main, 70
+0	46	300	#line 46 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	47	300	#pragma macro 7
+0	47	300		setout __OUT_AC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3896	323	#line 3896 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	46	323	#line 46 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	46	323	#line 46 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	47	323		set __Wait_7qG2_ms_7qG2_000_inline_main, 3000
+0	46	326	#line 46 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	326	#line 7921 "NXCDefs.h"
+0	7922	326		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	329	#line 7921 "NXCDefs.h"
+0	48	329	#line 48 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	48	329	#line 48 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	49	329		set __D0main, 75
+0	49	332	#line 49 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	50	332	#pragma macro 7
+0	50	332		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3913	355	#line 3913 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	49	355	#line 49 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	49	355	#line 49 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	50	355		set __D0main, 20
+0	50	358	#line 50 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	51	358	#pragma macro 7
+0	51	358		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3920	381	#line 3920 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	50	381	#line 50 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	50	381	#line 50 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	51	381		set __Wait_7qG2_ms_7qG2_000_inline_main, 1300
+0	50	384	#line 50 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	384	#line 7921 "NXCDefs.h"
+0	7922	384		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	387	#line 7921 "NXCDefs.h"
+0	52	387	#line 52 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	52	387	#line 52 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	53	387		set __D0main, 70
+0	53	390	#line 53 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	54	390	#pragma macro 7
+0	54	390		setout __OUT_AC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3937	413	#line 3937 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	53	413	#line 53 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	53	413	#line 53 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	54	413		set __Wait_7qG2_ms_7qG2_000_inline_main, 850
+0	53	416	#line 53 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	416	#line 7921 "NXCDefs.h"
+0	7922	416		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	419	#line 7921 "NXCDefs.h"
+0	55	419	#line 55 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	55	419	#line 55 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	56	419		set __D0main, 65
+0	56	422	#line 56 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	57	422	#pragma macro 7
+0	57	422		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3954	445	#line 3954 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	56	445	#line 56 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	56	445	#line 56 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	57	445		set __D0main, 40
+0	57	448	#line 57 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	58	448	#pragma macro 7
+0	58	448		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3961	471	#line 3961 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	57	471	#line 57 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	57	471	#line 57 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	58	471		set __Wait_7qG2_ms_7qG2_000_inline_main, 1000
+0	57	474	#line 57 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	474	#line 7921 "NXCDefs.h"
+0	7922	474		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	477	#line 7921 "NXCDefs.h"
+0	59	477	#line 59 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	59	477	#line 59 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	60	477		set __D0main, 100
+0	60	480	#line 60 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	61	480	#pragma macro 7
+0	61	480		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3978	503	#line 3978 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	60	503	#line 60 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	60	503	#line 60 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	61	503		set __Wait_7qG2_ms_7qG2_000_inline_main, 500
+0	60	506	#line 60 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	506	#line 7921 "NXCDefs.h"
+0	7922	506		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	509	#line 7921 "NXCDefs.h"
+0	62	509	#line 62 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	62	509	#line 62 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	63	509		set __D0main, 50
+0	63	512	#line 63 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	64	512	#pragma macro 7
+0	64	512		setout __OUT_AC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3995	535	#line 3995 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	63	535	#line 63 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	63	535	#line 63 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	64	535		set __Wait_7qG2_ms_7qG2_000_inline_main, 700
+0	63	538	#line 63 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	538	#line 7921 "NXCDefs.h"
+0	7922	538		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	541	#line 7921 "NXCDefs.h"
+0	65	541	#line 65 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	65	541	#line 65 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	66	541		set __D0main, 40
+0	66	544	#line 66 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	67	544	#pragma macro 7
+0	67	544		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4012	567	#line 4012 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	66	567	#line 66 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	66	567	#line 66 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	67	567		set __D0main, 60
+0	67	570	#line 67 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	68	570	#pragma macro 7
+0	68	570		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4019	593	#line 4019 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	67	593	#line 67 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	67	593	#line 67 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	68	593		set __Wait_7qG2_ms_7qG2_000_inline_main, 1000
+0	67	596	#line 67 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	596	#line 7921 "NXCDefs.h"
+0	7922	596		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	599	#line 7921 "NXCDefs.h"
+0	69	599	#line 69 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	69	599	#line 69 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	70	599		set __D0main, 100
+0	70	602	#line 70 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	71	602	#pragma macro 7
+0	71	602		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4036	625	#line 4036 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	70	625	#line 70 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	70	625	#line 70 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	71	625		set __Wait_7qG2_ms_7qG2_000_inline_main, 500
+0	70	628	#line 70 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	628	#line 7921 "NXCDefs.h"
+0	7922	628		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	631	#line 7921 "NXCDefs.h"
+0	72	631	#line 72 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	72	631	#line 72 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	73	631		set __D0main, 70
+0	73	634	#line 73 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	74	634	#pragma macro 7
+0	74	634		setout __OUT_AC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4053	657	#line 4053 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	73	657	#line 73 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	73	657	#line 73 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	74	657		set __Wait_7qG2_ms_7qG2_000_inline_main, 850
+0	73	660	#line 73 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	660	#line 7921 "NXCDefs.h"
+0	7922	660		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	663	#line 7921 "NXCDefs.h"
+0	75	663	#line 75 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	75	663	#line 75 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	76	663		set __D0main, 75
+0	76	666	#line 76 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	77	666	#pragma macro 7
+0	77	666		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4070	689	#line 4070 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	76	689	#line 76 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	76	689	#line 76 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	77	689		set __D0main, 20
+0	77	692	#line 77 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	78	692	#pragma macro 7
+0	78	692		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4077	715	#line 4077 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	77	715	#line 77 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	77	715	#line 77 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	78	715		set __Wait_7qG2_ms_7qG2_000_inline_main, 1250
+0	77	718	#line 77 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	718	#line 7921 "NXCDefs.h"
+0	7922	718		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	721	#line 7921 "NXCDefs.h"
+0	79	721	#line 79 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	79	721	#line 79 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	80	721		set __D0main, 70
+0	80	724	#line 80 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	81	724	#pragma macro 7
+0	81	724		setout __OUT_AC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4094	747	#line 4094 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	80	747	#line 80 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	80	747	#line 80 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	81	747		set __Wait_7qG2_ms_7qG2_000_inline_main, 1700
+0	80	750	#line 80 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	750	#line 7921 "NXCDefs.h"
+0	7922	750		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	753	#line 7921 "NXCDefs.h"
+0	82	753	#line 82 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	82	753	#line 82 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	83	753		set __D0main, 20
+0	83	756	#line 83 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	84	756	#pragma macro 7
+0	84	756		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4111	779	#line 4111 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	83	779	#line 83 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	83	779	#line 83 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	84	779		set __D0main, 70
+0	84	782	#line 84 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	85	782	#pragma macro 7
+0	85	782		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4118	805	#line 4118 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	84	805	#line 84 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	84	805	#line 84 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	85	805		set __Wait_7qG2_ms_7qG2_000_inline_main, 1300
+0	84	808	#line 84 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	808	#line 7921 "NXCDefs.h"
+0	7922	808		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	811	#line 7921 "NXCDefs.h"
+0	86	811	#line 86 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	86	811	#line 86 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	87	811		set __D0main, 70
+0	87	814	#line 87 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	88	814	#pragma macro 7
+0	88	814		setout __OUT_AC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4135	837	#line 4135 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	87	837	#line 87 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	87	837	#line 87 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	88	837		set __Wait_7qG2_ms_7qG2_000_inline_main, 850
+0	87	840	#line 87 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	840	#line 7921 "NXCDefs.h"
+0	7922	840		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	843	#line 7921 "NXCDefs.h"
+0	89	843	#line 89 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	89	843	#line 89 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	90	843		set __D0main, 20
+0	90	846	#line 90 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	91	846	#pragma macro 7
+0	91	846		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4152	869	#line 4152 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	90	869	#line 90 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	90	869	#line 90 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	91	869		set __D0main, 65
+0	91	872	#line 91 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	92	872	#pragma macro 7
+0	92	872		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4159	895	#line 4159 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	91	895	#line 91 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	91	895	#line 91 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	92	895		set __Wait_7qG2_ms_7qG2_000_inline_main, 1250
+0	91	898	#line 91 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	898	#line 7921 "NXCDefs.h"
+0	7922	898		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	901	#line 7921 "NXCDefs.h"
+0	93	901	#line 93 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	93	901	#line 93 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	94	901		set __D0main, 70
+0	94	904	#line 94 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	95	904	#pragma macro 7
+0	95	904		setout __OUT_AC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4176	927	#line 4176 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	94	927	#line 94 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	94	927	#line 94 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	95	927		set __Wait_7qG2_ms_7qG2_000_inline_main, 850
+0	94	930	#line 94 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	930	#line 7921 "NXCDefs.h"
+0	7922	930		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	933	#line 7921 "NXCDefs.h"
+0	97	933	#line 97 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	97	933	#line 97 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	98	933		set __D0main, 75
+0	98	936	#line 98 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	99	936	#pragma macro 7
+0	99	936		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4193	959	#line 4193 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	98	959	#line 98 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	98	959	#line 98 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	99	959		set __D0main, 20
+0	99	962	#line 99 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	100	962	#pragma macro 7
+0	100	962		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4200	985	#line 4200 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	99	985	#line 99 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	99	985	#line 99 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	100	985		set __Wait_7qG2_ms_7qG2_000_inline_main, 1350
+0	99	988	#line 99 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	988	#line 7921 "NXCDefs.h"
+0	7922	988		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	991	#line 7921 "NXCDefs.h"
+0	101	991	#line 101 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	101	991	#line 101 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	102	991		set __D0main, 70
+0	102	994	#line 102 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	103	994	#pragma macro 7
+0	103	994		setout __OUT_AC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4217	1017	#line 4217 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	102	1017	#line 102 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	102	1017	#line 102 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	103	1017		set __Wait_7qG2_ms_7qG2_000_inline_main, 850
+0	102	1020	#line 102 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	1020	#line 7921 "NXCDefs.h"
+0	7922	1020		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	1023	#line 7921 "NXCDefs.h"
+0	105	1023	#line 105 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	105	1023	#line 105 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	106	1023		set __D0main, 75
+0	106	1026	#line 106 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	107	1026	#pragma macro 7
+0	107	1026		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4234	1049	#line 4234 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	106	1049	#line 106 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	106	1049	#line 106 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	107	1049		set __D0main, 20
+0	107	1052	#line 107 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	108	1052	#pragma macro 7
+0	108	1052		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4241	1075	#line 4241 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	107	1075	#line 107 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	107	1075	#line 107 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	108	1075		set __Wait_7qG2_ms_7qG2_000_inline_main, 550
+0	107	1078	#line 107 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	1078	#line 7921 "NXCDefs.h"
+0	7922	1078		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	1081	#line 7921 "NXCDefs.h"
+0	108	1081	#line 108 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	110	1081	#line 110 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	110	1081	#line 110 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	111	1081		mov __signed_stack_001main, color
+0	110	1083	#line 110 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	110	1083	#line 110 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	111	1083		set __D0main, 2
+0	110	1086	#line 110 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	111	1086		cmp 4, __zfmain, __signed_stack_001main, __D0main
+0	110	1090	#line 110 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	111	1090		mov __D0main, __zfmain
+0	112	1092	#line 112 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	113	1092		brtst 4, __NXC_Label_628, __zfmain
+0	112	1095	#line 112 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	113	1095		set __D0main, 70
+0	113	1098	#line 113 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	114	1098	#pragma macro 7
+0	114	1098		setout __OUT_AC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4274	1121	#line 4274 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	113	1121	#line 113 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	113	1121	#line 113 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	114	1121		set __Wait_7qG2_ms_7qG2_000_inline_main, 850
+0	113	1124	#line 113 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	1124	#line 7921 "NXCDefs.h"
+0	7922	1124		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	1127	#line 7921 "NXCDefs.h"
+0	115	1127	#line 115 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	115	1127	#line 115 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	116	1127		set __D0main, 20
+0	116	1130	#line 116 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	117	1130	#pragma macro 7
+0	117	1130		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4291	1153	#line 4291 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	116	1153	#line 116 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	116	1153	#line 116 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	117	1153		set __D0main, 70
+0	117	1156	#line 117 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	118	1156	#pragma macro 7
+0	118	1156		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4298	1179	#line 4298 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	117	1179	#line 117 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	117	1179	#line 117 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	118	1179		set __Wait_7qG2_ms_7qG2_000_inline_main, 1300
+0	117	1182	#line 117 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	1182	#line 7921 "NXCDefs.h"
+0	7922	1182		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	1185	#line 7921 "NXCDefs.h"
+0	118	1185	#line 118 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	118	1185	#line 118 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	119	1185		set __D0main, 70
+0	119	1188	#line 119 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	120	1188	#pragma macro 7
+0	120	1188		setout __OUT_AC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4315	1211	#line 4315 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	119	1211	#line 119 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	119	1211	#line 119 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	120	1211		set __Wait_7qG2_ms_7qG2_000_inline_main, 1700
+0	119	1214	#line 119 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	1214	#line 7921 "NXCDefs.h"
+0	7922	1214		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	1217	#line 7921 "NXCDefs.h"
+0	121	1217	#line 121 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	121	1217	#line 121 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	122	1217		set __D0main, 80
+0	122	1220	#line 122 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	123	1220	#pragma macro 7
+0	123	1220		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4332	1243	#line 4332 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	122	1243	#line 122 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	122	1243	#line 122 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	123	1243		set __D0main, 20
+0	123	1246	#line 123 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	124	1246	#pragma macro 7
+0	124	1246		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4339	1269	#line 4339 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	123	1269	#line 123 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	123	1269	#line 123 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	124	1269		set __Wait_7qG2_ms_7qG2_000_inline_main, 1300
+0	123	1272	#line 123 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	1272	#line 7921 "NXCDefs.h"
+0	7922	1272		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	1275	#line 7921 "NXCDefs.h"
+0	124	1275	#line 124 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	124	1275	#line 124 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	125	1275		set __D0main, 70
+0	125	1278	#line 125 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	126	1278	#pragma macro 7
+0	126	1278		setout __OUT_AC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4356	1301	#line 4356 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	125	1301	#line 125 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	125	1301	#line 125 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	126	1301		set __Wait_7qG2_ms_7qG2_000_inline_main, 2550
+0	125	1304	#line 125 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	1304	#line 7921 "NXCDefs.h"
+0	7922	1304		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	1307	#line 7921 "NXCDefs.h"
+0	129	1307	#line 129 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	129	1307	#line 129 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	130	1307		set __D0main, 80
+0	130	1310	#line 130 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	131	1310	#pragma macro 7
+0	131	1310		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4373	1333	#line 4373 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	130	1333	#line 130 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	130	1333	#line 130 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	131	1333		set __D0main, 20
+0	131	1336	#line 131 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	132	1336	#pragma macro 7
+0	132	1336		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4380	1359	#line 4380 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	131	1359	#line 131 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	131	1359	#line 131 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	132	1359		set __Wait_7qG2_ms_7qG2_000_inline_main, 1350
+0	131	1362	#line 131 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	1362	#line 7921 "NXCDefs.h"
+0	7922	1362		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	1365	#line 7921 "NXCDefs.h"
+0	132	1365	#line 132 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	132	1365	#line 132 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	133	1365		set __D0main, 70
+0	133	1368	#line 133 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	134	1368	#pragma macro 7
+0	134	1368		setout __OUT_AC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4397	1391	#line 4397 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	133	1391	#line 133 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	133	1391	#line 133 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	134	1391		set __Wait_7qG2_ms_7qG2_000_inline_main, 1700
+0	133	1394	#line 133 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	1394	#line 7921 "NXCDefs.h"
+0	7922	1394		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	1397	#line 7921 "NXCDefs.h"
+0	135	1397	#line 135 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	135	1397	#line 135 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	136	1397		set __D0main, 75
+0	136	1400	#line 136 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	137	1400	#pragma macro 7
+0	137	1400		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4414	1423	#line 4414 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	136	1423	#line 136 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	136	1423	#line 136 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	137	1423		set __D0main, 20
+0	137	1426	#line 137 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	138	1426	#pragma macro 7
+0	138	1426		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4421	1449	#line 4421 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	137	1449	#line 137 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	137	1449	#line 137 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	138	1449		set __Wait_7qG2_ms_7qG2_000_inline_main, 1400
+0	137	1452	#line 137 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	1452	#line 7921 "NXCDefs.h"
+0	7922	1452		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	1455	#line 7921 "NXCDefs.h"
+0	138	1455	#line 138 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	138	1455	#line 138 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	139	1455		set __D0main, 70
+0	139	1458	#line 139 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	140	1458	#pragma macro 7
+0	140	1458		setout __OUT_AC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4438	1481	#line 4438 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	139	1481	#line 139 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	139	1481	#line 139 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	140	1481		set __Wait_7qG2_ms_7qG2_000_inline_main, 2500
+0	139	1484	#line 139 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	1484	#line 7921 "NXCDefs.h"
+0	7922	1484		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	1487	#line 7921 "NXCDefs.h"
+0	141	1487	#line 141 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	141	1487	#line 141 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	142	1487		set __D0main, 20
+0	142	1490	#line 142 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	143	1490	#pragma macro 7
+0	143	1490		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4455	1513	#line 4455 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	142	1513	#line 142 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	142	1513	#line 142 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	143	1513		set __D0main, 65
+0	143	1516	#line 143 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	144	1516	#pragma macro 7
+0	144	1516		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4462	1539	#line 4462 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	143	1539	#line 143 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	143	1539	#line 143 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	144	1539		set __Wait_7qG2_ms_7qG2_000_inline_main, 1300
+0	143	1542	#line 143 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	1542	#line 7921 "NXCDefs.h"
+0	7922	1542		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	1545	#line 7921 "NXCDefs.h"
+0	144	1545	#line 144 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	144	1545	#line 144 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	145	1545		set __D0main, 70
+0	145	1548	#line 145 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	146	1548	#pragma macro 7
+0	146	1548		setout __OUT_AC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4479	1571	#line 4479 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	145	1571	#line 145 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	145	1571	#line 145 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	146	1571		set __Wait_7qG2_ms_7qG2_000_inline_main, 1700
+0	145	1574	#line 145 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	1574	#line 7921 "NXCDefs.h"
+0	7922	1574		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	1577	#line 7921 "NXCDefs.h"
+0	147	1577	#line 147 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	147	1577	#line 147 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	148	1577		set __D0main, 20
+0	148	1580	#line 148 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	149	1580	#pragma macro 7
+0	149	1580		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4496	1603	#line 4496 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	148	1603	#line 148 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	148	1603	#line 148 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	149	1603		set __D0main, 70
+0	149	1606	#line 149 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	150	1606	#pragma macro 7
+0	150	1606		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4503	1629	#line 4503 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	149	1629	#line 149 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	149	1629	#line 149 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	150	1629		set __Wait_7qG2_ms_7qG2_000_inline_main, 1250
+0	149	1632	#line 149 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	1632	#line 7921 "NXCDefs.h"
+0	7922	1632		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	1635	#line 7921 "NXCDefs.h"
+0	150	1635	#line 150 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	150	1635	#line 150 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	151	1635		set __D0main, 70
+0	151	1638	#line 151 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	152	1638	#pragma macro 7
+0	152	1638		setout __OUT_AC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4520	1661	#line 4520 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	151	1661	#line 151 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	151	1661	#line 151 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	152	1661		set __Wait_7qG2_ms_7qG2_000_inline_main, 850
+0	151	1664	#line 151 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	1664	#line 7921 "NXCDefs.h"
+0	7922	1664		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	1667	#line 7921 "NXCDefs.h"
+0	155	1667	#line 155 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	155	1667	#line 155 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	156	1667		set __D0main, 20
+0	156	1670	#line 156 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	157	1670	#pragma macro 7
+0	157	1670		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4537	1693	#line 4537 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	156	1693	#line 156 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	156	1693	#line 156 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	157	1693		set __D0main, 65
+0	157	1696	#line 157 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	158	1696	#pragma macro 7
+0	158	1696		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4544	1719	#line 4544 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	157	1719	#line 157 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	157	1719	#line 157 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	158	1719		set __Wait_7qG2_ms_7qG2_000_inline_main, 1350
+0	157	1722	#line 157 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	1722	#line 7921 "NXCDefs.h"
+0	7922	1722		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	1725	#line 7921 "NXCDefs.h"
+0	158	1725	#line 158 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	158	1725	#line 158 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	159	1725		set __D0main, 70
+0	159	1728	#line 159 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	160	1728	#pragma macro 7
+0	160	1728		setout __OUT_AC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4561	1751	#line 4561 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	159	1751	#line 159 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	159	1751	#line 159 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	160	1751		set __Wait_7qG2_ms_7qG2_000_inline_main, 1700
+0	159	1754	#line 159 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	1754	#line 7921 "NXCDefs.h"
+0	7922	1754		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	1757	#line 7921 "NXCDefs.h"
+0	161	1757	#line 161 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	161	1757	#line 161 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	162	1757		set __D0main, 75
+0	162	1760	#line 162 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	163	1760	#pragma macro 7
+0	163	1760		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4578	1783	#line 4578 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	162	1783	#line 162 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	162	1783	#line 162 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	163	1783		set __D0main, 20
+0	163	1786	#line 163 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	164	1786	#pragma macro 7
+0	164	1786		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4585	1809	#line 4585 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	163	1809	#line 163 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	163	1809	#line 163 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	164	1809		set __Wait_7qG2_ms_7qG2_000_inline_main, 1300
+0	163	1812	#line 163 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	1812	#line 7921 "NXCDefs.h"
+0	7922	1812		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	1815	#line 7921 "NXCDefs.h"
+0	164	1815	#line 164 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	164	1815	#line 164 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	165	1815		set __D0main, 70
+0	165	1818	#line 165 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	166	1818	#pragma macro 7
+0	166	1818		setout __OUT_AC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4602	1841	#line 4602 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	165	1841	#line 165 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	165	1841	#line 165 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	166	1841		set __Wait_7qG2_ms_7qG2_000_inline_main, 850
+0	165	1844	#line 165 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	1844	#line 7921 "NXCDefs.h"
+0	7922	1844		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	1847	#line 7921 "NXCDefs.h"
+0	167	1847	#line 167 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	167	1847	#line 167 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	168	1847		set __D0main, 20
+0	168	1850	#line 168 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	169	1850	#pragma macro 7
+0	169	1850		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4619	1873	#line 4619 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	168	1873	#line 168 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	168	1873	#line 168 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	169	1873		set __D0main, 65
+0	169	1876	#line 169 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	170	1876	#pragma macro 7
+0	170	1876		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4626	1899	#line 4626 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	169	1899	#line 169 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	169	1899	#line 169 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	170	1899		set __Wait_7qG2_ms_7qG2_000_inline_main, 1350
+0	169	1902	#line 169 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	1902	#line 7921 "NXCDefs.h"
+0	7922	1902		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	1905	#line 7921 "NXCDefs.h"
+0	170	1905	#line 170 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	170	1905	#line 170 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	171	1905		set __D0main, 70
+0	171	1908	#line 171 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	172	1908	#pragma macro 7
+0	172	1908		setout __OUT_AC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4643	1931	#line 4643 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	171	1931	#line 171 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	171	1931	#line 171 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	172	1931		set __Wait_7qG2_ms_7qG2_000_inline_main, 850
+0	171	1934	#line 171 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	1934	#line 7921 "NXCDefs.h"
+0	7922	1934		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	1937	#line 7921 "NXCDefs.h"
+0	173	1937	#line 173 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	173	1937	#line 173 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	174	1937		set __D0main, 75
+0	174	1940	#line 174 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	175	1940	#pragma macro 7
+0	175	1940		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4660	1963	#line 4660 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	174	1963	#line 174 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	174	1963	#line 174 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	175	1963		set __D0main, 20
+0	175	1966	#line 175 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	176	1966	#pragma macro 7
+0	176	1966		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4667	1989	#line 4667 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	175	1989	#line 175 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	175	1989	#line 175 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	176	1989		set __Wait_7qG2_ms_7qG2_000_inline_main, 1300
+0	175	1992	#line 175 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	1992	#line 7921 "NXCDefs.h"
+0	7922	1992		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	1995	#line 7921 "NXCDefs.h"
+0	176	1995	#line 176 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	176	1995	#line 176 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	177	1995		set __D0main, 70
+0	177	1998	#line 177 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	178	1998	#pragma macro 7
+0	178	1998		setout __OUT_AC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4684	2021	#line 4684 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	177	2021	#line 177 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	177	2021	#line 177 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	178	2021		set __Wait_7qG2_ms_7qG2_000_inline_main, 850
+0	177	2024	#line 177 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	2024	#line 7921 "NXCDefs.h"
+0	7922	2024		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	2027	#line 7921 "NXCDefs.h"
+0	179	2027	#line 179 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	179	2027	#line 179 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	180	2027		set __D0main, 65
+0	180	2030	#line 180 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	181	2030	#pragma macro 7
+0	181	2030		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4701	2053	#line 4701 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	180	2053	#line 180 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	180	2053	#line 180 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	181	2053		set __D0main, 20
+0	181	2056	#line 181 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	182	2056	#pragma macro 7
+0	182	2056		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4708	2079	#line 4708 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	181	2079	#line 181 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	181	2079	#line 181 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	182	2079		set __Wait_7qG2_ms_7qG2_000_inline_main, 1200
+0	181	2082	#line 181 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	7921	2082	#line 7921 "NXCDefs.h"
+0	7922	2082		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	2085	#line 7921 "NXCDefs.h"
+0	182	2085	#line 182 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	185	2085	#line 185 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+0	186	2085		exit -1, -1
+1	4885	0		setin __constVal1, __ResetSensorPort, 5
+1	4887	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	4888	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	4889	11		subret ____ResetSensorSubroutine_return
+2	3	0	#line 3 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	4	0		mov __signed_stack_001colorsensor, color
+2	3	2	#line 3 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	3	2	#line 3 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	4	2		set __D0colorsensor, 2
+2	3	5	#line 3 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	4	5		cmp 5, __zfcolorsensor, __signed_stack_001colorsensor, __D0colorsensor
+2	3	9	#line 3 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	4	9		mov __D0colorsensor, __zfcolorsensor
+2	3	11	#line 3 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	4	11		brtst 4, __NXC_Label_492, __zfcolorsensor
+2	3	14	#line 3 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	4	14		mov __signed_stack_001colorsensor, __D0colorsensor
+2	3	16	#line 3 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	4	16		mov __signed_stack_002colorsensor, color
+2	3	18	#line 3 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	3	18	#line 3 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	4	18		set __D0colorsensor, 3
+2	3	21	#line 3 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	4	21		cmp 5, __zfcolorsensor, __signed_stack_002colorsensor, __D0colorsensor
+2	3	25	#line 3 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	3	25	#line 3 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	4	25		and __D0colorsensor, __signed_stack_001colorsensor, __zfcolorsensor
+2	3	29	#line 3 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	4	29		tst 5, __zfcolorsensor, __D0colorsensor
+2	3	32	#line 3 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	4	32		mov __D0colorsensor, __zfcolorsensor
+2	3	34	#line 3 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	4	34		brtst 4, __NXC_Label_492, __zfcolorsensor
+2	3	37	#line 3 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	4	37		mov __signed_stack_001colorsensor, __D0colorsensor
+2	3	39	#line 3 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	4	39		mov __signed_stack_002colorsensor, color
+2	3	41	#line 3 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	3	41	#line 3 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	4	41		set __D0colorsensor, 5
+2	3	44	#line 3 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	4	44		cmp 5, __zfcolorsensor, __signed_stack_002colorsensor, __D0colorsensor
+2	3	48	#line 3 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	3	48	#line 3 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	4	48		and __D0colorsensor, __signed_stack_001colorsensor, __zfcolorsensor
+2	4	52	#line 4 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	5	52		tst 5, __zfcolorsensor, __D0colorsensor
+2	4	55	#line 4 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	5	55		brtst 4, __NXC_Label_490, __zfcolorsensor
+2	4	58	#line 4 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	5	58		set __SetSensorColorFull_7qG2_port_7qG2_000_inline_colorsensor, 2
+2	4	61	#line 4 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	3802	61	#line 3802 "NXCDefs.h"
+2	3803	61	#pragma macro 6
+2	3803	61		setin __constVal13, __SetSensorColorFull_7qG2_port_7qG2_000_inline_colorsensor, 0
+2	3803	65		setin __constVal0, __SetSensorColorFull_7qG2_port_7qG2_000_inline_colorsensor, 1
+2	3803	69		mov __ResetSensorPort, __SetSensorColorFull_7qG2_port_7qG2_000_inline_colorsensor
+2	3803	71		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+2	3670	73	#line 3670 "NXCDefs.h"
+2	3802	73	#line 3802 "NXCDefs.h"
+2	5	73	#line 5 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	7	73	#line 7 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	8	73		set __colorsensor_7qG2_csr_7qG2_001.Port, 2
+2	7	76	#line 7 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	7	76	#line 7 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	8	76	#line 8 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	9	76	#pragma macro 4
+2	9	76	#line 9 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	9	76		syscall 34, __colorsensor_7qG2_csr_7qG2_001
+2	7	79	#line 7 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	7	79	#line 7 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	7	79	#line 7 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	7	79	#line 7 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	8	79	#line 8 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	8	79	#line 8 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	8	79	#line 8 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	9	79		mov __signed_stack_001colorsensor, __colorsensor_7qG2_csr_7qG2_001.Result
+2	8	81	#line 8 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	8	81	#line 8 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	9	81		set __D0colorsensor, 0
+2	8	84	#line 8 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	9	84		cmp 4, __zfcolorsensor, __signed_stack_001colorsensor, __D0colorsensor
+2	8	88	#line 8 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	9	88		mov __D0colorsensor, __zfcolorsensor
+2	9	90	#line 9 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	10	90		brtst 4, __NXC_Label_499, __zfcolorsensor
+2	10	93	#line 10 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	11	93		mov color, __colorsensor_7qG2_csr_7qG2_001.ColorValue
+2	10	95	#line 10 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	10	95	#line 10 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	12	95	#line 12 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	15	95	#line 15 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	16	95		jmp __NXC_Label_489
+2	15	97	#line 15 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	15	97	#line 15 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+2	16	97		subret __colorsensor_return
+3	186	0	#line 186 "U:\Documents\projet isn\programme commun\miseEnComun.nxc"
+3	187	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	U:\Documents\projet isn\programme commun\miseEnComun.nxc
+1	__ResetSensorSubroutine	2088	NXTDefs.h
+2	colorsensor	2101	U:\Documents\projet isn\programme commun\miseEnComun.nxc
+3	__initialize_global_data	2200	U:\Documents\projet isn\programme commun\miseEnComun.nxc

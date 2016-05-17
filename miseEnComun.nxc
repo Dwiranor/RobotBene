@@ -1,0 +1,184 @@
+int color;
+
+void colorsensor(){ //methode
+ while(color!=2 && color!=3 && color!= 5){
+   SetSensorColorFull(S3);
+   ColorSensorReadType csr;
+   csr.Port = S3;
+   SysColorSensorRead(csr);
+   if (csr.Result == NO_ERR) {
+		  color=csr.ColorValue;
+		 }
+   }
+}
+
+
+task main(){
+
+  colorsensor();
+  if (color==3){ //vert
+  
+  }
+
+ if (color==5){ //rouge
+ 
+  OnFwd(OUT_AC, 70);  //avance de 20cm
+ 	        Wait(850);
+
+   OnFwd(OUT_A, 75);   //gauche
+   		  OnFwd(OUT_C, 20);
+			  Wait(1350);
+
+  OnFwd(OUT_AC, 70); //avance de 40cm
+           Wait(1700);
+
+   OnFwd(OUT_A, 20);   //droite
+   		  OnFwd(OUT_C, 65);
+			  Wait(1300);
+
+  OnFwd(OUT_AC, 70); //avance de 40cm
+           Wait(1700);
+
+   OnFwd(OUT_A, 20);   //droite
+   		  OnFwd(OUT_C, 65);
+			  Wait(1300);
+
+  OnFwd(OUT_AC, 70); //avance de 80cm
+           Wait(3000);
+
+   OnFwd(OUT_A, 75);   //gauche
+   		  OnFwd(OUT_C, 20);
+			  Wait(1300);
+
+   OnFwd(OUT_AC, 70);  //avance de 20cm
+           Wait(850);
+
+	OnFwd(OUT_A, 65);
+   OnFwd(OUT_C, 40);
+ 	Wait(1000);               //chicane
+
+  OnFwd(OUT_C, 100);
+  Wait(500);
+
+  OnFwd(OUT_AC, 50);
+  Wait(700);
+
+  OnFwd(OUT_A, 40);
+  OnFwd(OUT_C, 60);
+  Wait(1000);
+
+  OnFwd(OUT_A, 100);
+  Wait(500);
+
+   OnFwd(OUT_AC, 70);  //avance de 20cm
+ 	 		   Wait(850);
+
+   OnFwd(OUT_A, 75);   //gauche
+   		  OnFwd(OUT_C, 20);
+			  Wait(1250);
+
+   OnFwd(OUT_AC, 70); //avance de 40cm
+	        Wait(1700);
+
+   OnFwd(OUT_A, 20);   //droite
+   		  OnFwd(OUT_C, 70);
+			  Wait(1300);
+
+   OnFwd(OUT_AC, 70);  //avance de 20cm
+           Wait(850);
+
+   OnFwd(OUT_A, 20);   //droite
+   		  OnFwd(OUT_C, 65);
+			  Wait(1250);
+
+   OnFwd(OUT_AC, 70);  //avance de 20cm
+           Wait(850);
+
+
+   OnFwd(OUT_A, 75);   //gauche
+   		  OnFwd(OUT_C, 20);
+			  Wait(1350);
+
+   OnFwd(OUT_AC, 70);  //avance de 20cm
+           Wait(850);
+
+
+   OnFwd(OUT_A, 75);   //gauche
+   		  OnFwd(OUT_C, 20);
+			  Wait(550);
+ }
+
+ if (color==2){  //bleu
+ 
+  OnFwd(OUT_AC, 70);
+ 	  		  Wait(850);
+
+   OnFwd(OUT_A, 20);         //droite
+   		  OnFwd(OUT_C, 70);
+			  Wait(1300);
+ 	  		  OnFwd(OUT_AC, 70);
+ 	  		  Wait(1700);
+
+   OnFwd(OUT_A, 80);          //gauche
+   		  OnFwd(OUT_C, 20);
+			  Wait(1300);
+ 	  		  OnFwd(OUT_AC, 70);
+ 	  		  Wait(2550);
+
+	//(voir couleur noir) chicane
+
+	OnFwd(OUT_A, 80);           //gauche
+   		  OnFwd(OUT_C, 20);
+			  Wait(1350);
+ 	  		  OnFwd(OUT_AC, 70);
+ 	  		  Wait(1700);
+
+   OnFwd(OUT_A, 75);            //gauche
+   		  OnFwd(OUT_C, 20);
+			  Wait(1400);
+ 	  		  OnFwd(OUT_AC, 70);
+ 	  		  Wait(2500);
+
+   OnFwd(OUT_A, 20);         //droite
+   		  OnFwd(OUT_C, 65);
+			  Wait(1300);
+ 	  		  OnFwd(OUT_AC, 70);
+ 	  		  Wait(1700);
+
+   OnFwd(OUT_A, 20);         //droite
+   		  OnFwd(OUT_C, 70);
+			  Wait(1250);
+ 	  		  OnFwd(OUT_AC, 70);
+ 	  		  Wait(850);
+
+	//(voir couleur rouge) chicane
+
+	OnFwd(OUT_A, 20);         //droite
+   		  OnFwd(OUT_C, 65);
+			  Wait(1350);
+ 	  		  OnFwd(OUT_AC, 70);
+ 	  		  Wait(1700);
+
+   OnFwd(OUT_A, 75);            //gauche
+   		  OnFwd(OUT_C, 20);
+			  Wait(1300);
+ 	  		  OnFwd(OUT_AC, 70);
+ 	  		  Wait(850);
+
+   OnFwd(OUT_A, 20);         //droite
+   		  OnFwd(OUT_C, 65);
+			  Wait(1350);
+ 	  		  OnFwd(OUT_AC, 70);
+ 	  		  Wait(850);
+
+  OnFwd(OUT_A, 75);            //gauche
+   		  OnFwd(OUT_C, 20);
+			  Wait(1300);
+ 	  		  OnFwd(OUT_AC, 70);
+ 	  		  Wait(850);
+
+  OnFwd(OUT_A, 65);         //gauche
+   		  OnFwd(OUT_C, 20);
+			  Wait(1200);
+ }
+  	 }
