@@ -1,28 +1,51 @@
 int color;
+int i=0;
+int distanceSensor;
+int touchCounter;
 
 void colorsensor(){ //methode
  while(color!=2 && color!=3 && color!= 5){
- 					 SetSensorColorFull(S3);
- 					 ColorSensorReadType csr;
- 					 csr.Port = S3;
- 					 SysColorSensorRead(csr);
- 					 if (csr.Result == NO_ERR) {
- 					  color=csr.ColorValue;
- 				 	 NumOut(0, LCD_LINE1, color);
+   SetSensorColorFull(S3);
+   ColorSensorReadType csr;
+   csr.Port = S3;
+   SysColorSensorRead(csr);
+   if (csr.Result == NO_ERR) {
+		  color=csr.ColorValue;
+		 }
+   }
+}
 
-  	  				 }
-  }
- }
+void nordExiste(){
+
+}
 
 
 task main(){
 
   colorsensor();
   if (color==3){ //vert
-  
+   while (color!=5){
+    SetSensorLowspeed(S4);
+    SetSensor(IN_1, SENSOR_TOUCH);
+    while(touchCounter==0){
+     OnFwd(OUT_AC, 70);  //avance de 20cm
+ 	   Wait(850);
+    }
+    touchCounter=0
+    x = SensorUS(S4);
+    if(x)
+    
+    
+    
+
+    color sensor();
+    
+
+   }
   }
 
  if (color==5){ //rouge
+ 
   OnFwd(OUT_AC, 70);  //avance de 20cm
  	        Wait(850);
 
@@ -110,6 +133,7 @@ task main(){
  }
 
  if (color==2){  //bleu
+ 
   OnFwd(OUT_AC, 70);
  	  		  Wait(850);
 
@@ -124,5 +148,61 @@ task main(){
 			  Wait(1300);
  	  		  OnFwd(OUT_AC, 70);
  	  		  Wait(2550);
+
+	//(voir couleur noir) chicane
+
+	OnFwd(OUT_A, 80);           //gauche
+   		  OnFwd(OUT_C, 20);
+			  Wait(1350);
+ 	  		  OnFwd(OUT_AC, 70);
+ 	  		  Wait(1700);
+
+   OnFwd(OUT_A, 75);            //gauche
+   		  OnFwd(OUT_C, 20);
+			  Wait(1400);
+ 	  		  OnFwd(OUT_AC, 70);
+ 	  		  Wait(2500);
+
+   OnFwd(OUT_A, 20);         //droite
+   		  OnFwd(OUT_C, 65);
+			  Wait(1300);
+ 	  		  OnFwd(OUT_AC, 70);
+ 	  		  Wait(1700);
+
+   OnFwd(OUT_A, 20);         //droite
+   		  OnFwd(OUT_C, 70);
+			  Wait(1250);
+ 	  		  OnFwd(OUT_AC, 70);
+ 	  		  Wait(850);
+
+	//(voir couleur rouge) chicane
+
+	OnFwd(OUT_A, 20);         //droite
+   		  OnFwd(OUT_C, 65);
+			  Wait(1350);
+ 	  		  OnFwd(OUT_AC, 70);
+ 	  		  Wait(1700);
+
+   OnFwd(OUT_A, 75);            //gauche
+   		  OnFwd(OUT_C, 20);
+			  Wait(1300);
+ 	  		  OnFwd(OUT_AC, 70);
+ 	  		  Wait(850);
+
+   OnFwd(OUT_A, 20);         //droite
+   		  OnFwd(OUT_C, 65);
+			  Wait(1350);
+ 	  		  OnFwd(OUT_AC, 70);
+ 	  		  Wait(850);
+
+  OnFwd(OUT_A, 75);            //gauche
+   		  OnFwd(OUT_C, 20);
+			  Wait(1300);
+ 	  		  OnFwd(OUT_AC, 70);
+ 	  		  Wait(850);
+
+  OnFwd(OUT_A, 65);         //gauche
+   		  OnFwd(OUT_C, 20);
+			  Wait(1200);
  }
   	 }

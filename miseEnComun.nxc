@@ -1,4 +1,10 @@
 int color;
+int i;
+int distanceSensor;
+int touchCounter;
+int droite;
+int gauche;
+int devant;
 
 void colorsensor(){ //methode
  while(color!=2 && color!=3 && color!= 5){
@@ -12,12 +18,73 @@ void colorsensor(){ //methode
    }
 }
 
+void nordExiste(){
+
+}
+
 
 task main(){
 
   colorsensor();
   if (color==3){ //vert
-  
+  i=0;
+    SetSensorLowspeed(S4);
+    SetSensorLowspeed(S2);
+    SetSensorLowspeed(S1);
+
+    whiledevant != 255){
+     OnFwd(OUT_AC, 70);  //avance de 20cm
+ 	   Wait(850);
+ 	   devant= SensorUS(S1);
+    }
+    
+    touchCounter=0
+    droite = SensorUS(S4);
+    gauche= SensorUS(S2);
+    
+    if(droite<=15 || droite == 255){
+     OnFwd(OUT_A, 75);   //gauche
+	    OnFwd(OUT_C, 20);
+		  Wait(1350);
+		  i= i-1;
+    }
+    else{
+     OnFwd(OUT_A, 20);   //droite
+   		  OnFwd(OUT_C, 65);
+			  Wait(1300);
+			  i=i+1;
+    }
+    while (color!=5){
+    devant= SensorUS(S1);
+     if(devant<=15){
+        OnFwd(OUT_A, 20);   //droite
+   		  OnFwd(OUT_C, 65);
+			  Wait(1300);
+			  i=i+1;
+     } else{
+       OnFwd(OUT_AC, 70);  //avance de 20cm
+ 	     Wait(850);
+     }
+
+      gauche= SensorUS(S2);
+
+      if(gauche>=15){
+       OnFwd(OUT_A, 75);   //gauche
+	     OnFwd(OUT_C, 20);
+		   Wait(1350);
+		   i= i-1;
+      }
+      
+      if(i==0){
+       while(devant != 255){
+        OnFwd(OUT_AC, 70);  //avance de 20cm
+ 	      Wait(850);
+ 	      devant= SensorUS(S1);
+       }
+      }
+      
+    color sensor();
+   }
   }
 
  if (color==5){ //rouge

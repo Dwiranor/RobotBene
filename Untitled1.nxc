@@ -1,0 +1,9 @@
+task main()
+{
+  SetSensorLowspeed(S4);
+  x = SensorUS(S4);
+  NumOut(60, LCD_LINE1, x);
+}
+
+
+
